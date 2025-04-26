@@ -43,28 +43,33 @@ Je construis des applications **performantes**, **sécurisées** et **intelligen
 ---
 
 ## 🚀 Open Source Projects
+<!--PROJECTS-START-->
+<!--PROJECTS-END-->
+---
 
-- [Dupy007.github.io](https://github.com/Dupy007/Dupy007.github.io) — null
-- [MPMT-FRONT](https://github.com/Dupy007/MPMT-FRONT) — null
-- [MPMT-API](https://github.com/Dupy007/MPMT-API) — null
-- [ollamachatui](https://github.com/Dupy007/ollamachatui) — Petite interface de chat avec api ollama
-- [MPMT](https://github.com/Dupy007/MPMT) — MPMT est une plateforme de gestion de projet collaboratif destinée aux équipes de développement logiciel. L'objectif est de créer une application qui permettra aux équipes de planifier, suivre et collaborer sur des projets de manière efficace.
-- [merge_file](https://github.com/Dupy007/merge_file) — Script Bash qui va parcourir tous les fichiers d'un dossier (et ses sous-dossiers) et concaténer leur contenu dans un seul fichier texte
-- [scriptor](https://github.com/Dupy007/scriptor) — Ce script Bash installe un ensemble complet d'outils et de services pour préparer un environnement de développement ou production sur une distribution Debian/Ubuntu. Il s'adresse notamment aux développeurs souhaitant disposer d'un environnement prêt à l'emploi avec des composants pour le développement web, Java, Python, Node.js
-- [gameup](https://github.com/Dupy007/gameup) — null
-- [Disk-Fill-Utility](https://github.com/Dupy007/Disk-Fill-Utility) — Disk Fill Utility
-- [BigData](https://github.com/Dupy007/BigData) — null
-- [Gestion-commande](https://github.com/Dupy007/Gestion-commande) — null
-- [sping-security-demo](https://github.com/Dupy007/sping-security-demo) — null
-- [jad-s-show](https://github.com/Dupy007/jad-s-show) — Home made Kata : JAD's show
-- [principes-solid-exercice](https://github.com/Dupy007/principes-solid-exercice) — null
-- [swot](https://github.com/Dupy007/swot) — :school: Identify email addresses or domains names that belong to colleges or universities. Help automate the process of approving or rejecting academic discounts.
-- [pokemon-app](https://github.com/Dupy007/pokemon-app) — null
-- [F1](https://github.com/Dupy007/F1) — Api Rest Course Formule 1 
-- [JokeAndroidTP](https://github.com/Dupy007/JokeAndroidTP) — null
-- [superhero](https://github.com/Dupy007/superhero) — null
-- [java](https://github.com/Dupy007/java) — null
-- [JS1_exercice_boulangerie3](https://github.com/Dupy007/JS1_exercice_boulangerie3) — null
-- [JS2_exercice_pionEnCage2_enonce](https://github.com/Dupy007/JS2_exercice_pionEnCage2_enonce) — null
-- [dolibarr](https://github.com/Dupy007/dolibarr) — Dolibarr ERP CRM is a modern software package to manage your company or foundation's activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...). it's an open source Web application (written in PHP) designed for businesses of any sizes, foundations and freelancers.
-- [ecelestin-Moncash-sdk-php](https://github.com/Dupy007/ecelestin-Moncash-sdk-php) — null
+## 📈 Mes Statistiques GitHub
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Dupy007&show_icons=true&theme=radical" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Dupy007&theme=radical" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Dupy007&theme=darkhub&margin-w=10&no-frame=true" alt="GitHub Trophies" />
+</p>
+
+---
+
+## 📫 Me contacter
+
+- [LinkedIn](https://www.linkedin.com/in/jfd-1b87951b4/)
+- [GitHub](https://github.com/Dupy007)
+- 📧 Email : [jfd.social@outlook.fr](mailto:jfd.social@outlook.fr)
+
+---
+
+*Merci d'avoir visité mon profil ! 🚀 Let's build the future together.*
+
