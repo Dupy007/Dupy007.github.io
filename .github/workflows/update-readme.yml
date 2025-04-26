@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Mise à jour automatique tous les jours à minuit
+    - cron: '0 0 * * *' 
 
 jobs:
   update-readme:
@@ -14,33 +14,33 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Fetch GitHub projects using API
+          
+      - name: Fetch GitHub projects
         run: |
-          curl -H "Authorization: token ${{ secrets.TOKEN_GITHUB }}" \
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             -X GET "https://api.github.com/users/Dupy007/repos?type=public&sort=updated" \
             -o repos.json
 
-      - name: Generate the README section
+      - name: Generate projects list with description
         run: |
-          REPOS=$(cat repos.json | jq -r '.[] | "- [\(.name)](\(.html_url)) — \(.description)"')
-          echo -e "## 🚀 Open Source Projects\n\n$REPOS" > projects_section.md
+          echo "" > projects.md
+          cat repos.json | jq -r '.[] | "- [\(.name)](\(.html_url)) — \(.description // "No description")"' >> projects.md
 
-      - name: Update README.md
+      - name: Insert projects into README.md
         run: |
-          # Supprimer les projets précédemment insérés
-          sed -i '/## 🚀 Open Source Projects/,$d' README.md
-          
-          # Ajouter la nouvelle section de projets
-          cat projects_section.md >> README.md
-          
-          # Configure Git user details
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
-          
-          # Commit et push des changements
-          git add README.md
-          git commit -m "Update README with latest GitHub projects"
+          START="<!--PROJECTS-START-->"
+          END="<!--PROJECTS-END-->"
+          CONTENT=$(cat projects.md)
+
+          # Remplacer l'ancien contenu entre les marqueurs
+          awk -v start="$START" -v end="$END" -v content="$CONTENT" '
+            BEGIN { found=0 }
+            {
+              if ($0 ~ start) { print; print content; found=1; next }
+              if ($0 ~ end) { found=0 }
+              if (!found) print
+            }
+          ' README.md > temp.md && mv temp.md README.md
 
       - name: Push changes
         run: |
