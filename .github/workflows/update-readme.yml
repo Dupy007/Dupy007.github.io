@@ -34,6 +34,10 @@ jobs:
           # Ajouter la nouvelle section de projets
           cat projects_section.md >> README.md
           
+          # Configure Git user details
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          
           # Commit et push des changements
           git add README.md
           git commit -m "Update README with latest GitHub projects"
