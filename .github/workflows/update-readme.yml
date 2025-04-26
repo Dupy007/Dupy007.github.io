@@ -1,0 +1,40 @@
+name: Update README with GitHub Projects
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'  # Mise à jour automatique tous les jours à minuit
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch GitHub projects using API
+        run: |
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -X GET "https://api.github.com/users/Dupy007/repos?type=public&sort=updated" \
+            -o repos.json
+
+      - name: Generate the README section
+        run: |
+          REPOS=$(cat repos.json | jq -r '.[] | "- [\(.name)](\(.html_url)) — \(.description)"')
+          echo -e "## 🚀 Open Source Projects\n\n$REPOS" > projects_section.md
+
+      - name: Update README.md
+        run: |
+          # Supprimer les projets précédemment insérés
+          sed -i '/## 🚀 Open Source Projects/,$d' README.md
+          
+          # Ajouter la nouvelle section de projets
+          cat projects_section.md >> README.md
+          
+          # Commit et push des changements
+          git add README.md
+          git commit -m "Update README with latest GitHub projects"
+          git push
