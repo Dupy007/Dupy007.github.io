@@ -44,6 +44,13 @@ Je construis des applications **performantes**, **sécurisées** et **intelligen
 
 ## 🚀 Open Source Projects
 
+| Projet | Description | Technologies |
+| :--- | :--- | :--- |
+| [**OllamaChatUI**](https://github.com/Dupy007/ollamachatui) | Interface web pour interagir avec des modèles de langage locaux | POO, Linux SysAdmin |
+| [**MPMT**](https://github.com/Dupy007/MPMT) | Plateforme de gestion de projet collaborative pour équipes tech | Architecture logicielle, DevOps, CI/CD |
+| [**Scriptor**](https://github.com/Dupy007/scriptor) | Script Bash pour setup complet serveur dev/production | Linux SysAdmin, Admin système |
+| [**Dolibarr**](https://github.com/Dupy007/dolibarr) | ERP/CRM open source pour entreprises | POO, Développement Web, Bases de données |
+
 ---
 
 ## 📈 Mes Statistiques GitHub
